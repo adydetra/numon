@@ -23,10 +23,16 @@ export default defineNuxtConfig({
     'nuxt-simple-sitemap',
   ],
 
+  site: {
+    url: 'http://localhost:3000',
+  },
   devtools: {
     enabled: false,
   },
   tailwindcss: {
     viewer: false,
+  },
+  sitemap: {
+    xsl: false,
   },
 });
