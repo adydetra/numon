@@ -9,7 +9,7 @@
 - [x] GET Pokemon
 - [x] Responsive all device
 - [ ] OG Image
-- [ ] Sitemap
+- [x] Sitemap
 - [ ] Search
 - [x] Skeleton
 - [ ] Sort: date, name
