@@ -19,11 +19,11 @@ const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
 </script>
 
 <template>
-  <div class="mx-auto place-content-center max-w-fit py-4">
+  <UContainer class="mx-auto place-content-center max-w-fit py-12">
     <div v-if="pending" class="flex flex-col items-start gap-y-4">
       <SkeletonCard v-for="item in Array(9)" :key="`skeleton-${item}`" />
     </div>
-    <div v-else class="flex flex-col items-start gap-y-4">
+    <div v-else class="grid grid-cols-3 justify-center gap-12">
       <TransitionGroup name="list">
         <LazyCard
           v-for="(pokemon, index) in pokemons"
@@ -32,10 +32,10 @@ const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
         />
       </TransitionGroup>
     </div>
-  </div>
+  </UContainer>
 </template>
 
-<style>
+<style lang="postcss">
 .list-enter-active,
 .list-leave-active {
   transition: all 0.25s ease;

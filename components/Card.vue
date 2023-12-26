@@ -10,14 +10,18 @@ const pokemonName = computed(() => (props.pokemon.name));
 </script>
 
 <template>
-  <div class="flex flex-row items-center gap-4">
-    <NuxtImg
-      :src="pokemon.image"
-      class="w-16 h-16 rounded-full p-2 border-box object-center object-contain"
-      :alt="pokemonName"
-    />
-    <h2 class="text-lg">
-      {{ pokemonName }}
-    </h2>
-  </div>
+  <UCard>
+    <template #header>
+      <NuxtImg
+        :src="pokemon.image"
+        :alt="pokemonName"
+        class="size-24"
+      />
+    </template>
+    <template #footer>
+      <h2 class="text-lg">
+        {{ pokemonName }}
+      </h2>
+    </template>
+  </UCard>
 </template>
