@@ -14,12 +14,12 @@
     "@nuxt/ui": "^2.11.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.4.6",
+    "@antfu/eslint-config": "^2.6.1",
     "@nuxt/devtools": "^1.0.6",
     "eslint": "^8.56.0",
     "nuxt": "^3.9.0",
-    "nuxt-simple-sitemap": "^4.2.0",
-    "vue": "^3.3.12",
+    "nuxt-simple-sitemap": "^4.2.1",
+    "vue": "^3.4.0",
     "vue-router": "^4.2.5"
   }
 }
