@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 useHead({
   title: 'Numon',
   meta: [
@@ -13,23 +13,29 @@ useHead({
   ],
 });
 
+useSeoMeta({
+  description: 'Designed as a practical environment for experimenting with the Pokemon API using the powerful Nuxt. Created by Adityawarman Dewa Putra.',
+  twitterCard: 'summary_large_image',
+});
+
 const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
   server: false,
 });
 </script>
 
 <template>
-  <main mx-auto max-w-7xl place-content-center py-12>
-    <div v-if="pending" grid grid-cols-3 justify-center gap-12>
+  <main mx-auto max-w-7xl place-content-center bg-white h-dvh class="dark:bg-[#1c1b22]">
+    <div v-if="pending" grid grid-cols-3 justify-center gap-12 px-4 py-12>
       <SkeletonCard v-for="item in Array(9)" :key="`skeleton-${item}`" />
     </div>
-    <div v-else grid grid-cols-3 justify-center gap-12>
-      <LazyCard
+    <div v-else grid grid-cols-3 justify-center gap-12 px-4 py-12>
+      <LazyAppCard
         v-for="(pokemon, index) in pokemons"
         :key="`pokemon-${index}`"
         :pokemon="pokemon"
       />
     </div>
+    <LazyAppFooter />
   </main>
 </template>
 

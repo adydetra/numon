@@ -20,11 +20,15 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxt/image',
+    '@nuxtjs/color-mode',
     'nuxt-simple-sitemap',
   ],
 
   site: {
     url: 'https://numon.vercel.app',
+  },
+  colorMode: {
+    classSuffix: '',
   },
   devtools: {
     enabled: false,

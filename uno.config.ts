@@ -14,9 +14,9 @@ export default defineConfig({
     }),
   ],
   shortcuts: {
-    betweenCenter: 'flex justify-between items-center',
-    input: 'rounded border-none ring ring-gray-100 dark:ring-gray-900 bg-gray-100/50 text-base dark:bg-gray-900/50 p-4 focus:outline-none leading-loose',
-    sidebar: 'relative px-6 md:px-12 bg-gray-50/50 dark:bg-gray-950',
+    flexcenter: 'flex justify-center items-center',
+    flexbetween: 'flex justify-between items-center',
+    link: 'text-gray-400 no-underline border-b-solid b-b border-gray-200 hover:border-gray-400 dark:hover:border-gray-600 dark:border-gray-800 pb-0.5',
   },
   transformers: [
     transformerDirectives(),
