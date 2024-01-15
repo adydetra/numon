@@ -19,30 +19,51 @@ const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
 </script>
 
 <template>
-  <UContainer class="mx-auto place-content-center max-w-fit py-12">
-    <div v-if="pending" class="flex flex-col items-start gap-y-4">
+  <main mx-auto max-w-7xl place-content-center py-12>
+    <div v-if="pending" grid grid-cols-3 justify-center gap-12>
       <SkeletonCard v-for="item in Array(9)" :key="`skeleton-${item}`" />
     </div>
-    <div v-else class="grid grid-cols-3 justify-center gap-12">
-      <TransitionGroup name="list">
-        <LazyCard
-          v-for="(pokemon, index) in pokemons"
-          :key="`pokemon-${index}`"
-          :pokemon="pokemon"
-        />
-      </TransitionGroup>
+    <div v-else grid grid-cols-3 justify-center gap-12>
+      <LazyCard
+        v-for="(pokemon, index) in pokemons"
+        :key="`pokemon-${index}`"
+        :pokemon="pokemon"
+      />
     </div>
-  </UContainer>
+  </main>
 </template>
 
 <style lang="postcss">
-.list-enter-active,
-.list-leave-active {
-  transition: all 0.25s ease;
+* {
+  @apply font-sans;
 }
-.list-enter-from,
-.list-leave-to {
-  opacity: 0;
-  transform: translateX(-30px);
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: #d4d4d4 #ffffff;
+}
+html,
+body {
+  @apply min-h-dvh scroll-smooth m-0 p-0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #1b1b1b;
+}
+html.dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(41, 41, 41);
+}
+html.dark ::-webkit-scrollbar {
+  background-color: #050505;
+}
+.dark {
+  color-scheme: dark;
 }
 </style>

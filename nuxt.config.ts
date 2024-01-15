@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxt/ui',
+    '@unocss/nuxt',
     '@nuxt/image',
     'nuxt-simple-sitemap',
   ],
@@ -28,9 +28,6 @@ export default defineNuxtConfig({
   },
   devtools: {
     enabled: false,
-  },
-  tailwindcss: {
-    viewer: false,
   },
   sitemap: {
     xsl: false,

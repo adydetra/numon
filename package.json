@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "numon",
   "type": "module",
   "private": true,
   "scripts": {
@@ -12,13 +12,16 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/image": "^1.1.0",
-    "@nuxt/ui": "^2.11.1"
+    "@nuxt/image": "^1.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
+    "@iconify/json": "^2.2.168",
     "@nuxt/devtools": "^1.0.6",
+    "@unocss/eslint-plugin": "^0.58.3",
+    "@unocss/nuxt": "^0.58.3",
     "eslint": "^8.56.0",
+    "eslint-plugin-format": "^0.1.0",
     "nuxt": "^3.9.0",
     "nuxt-simple-sitemap": "^4.2.1",
     "vue": "^3.4.0",
