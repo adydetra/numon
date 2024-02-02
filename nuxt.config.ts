@@ -17,6 +17,8 @@ export default defineNuxtConfig({
     },
   },
 
+  srcDir: 'src/',
+
   modules: [
     '@unocss/nuxt',
     '@nuxt/image',
@@ -27,12 +29,15 @@ export default defineNuxtConfig({
   site: {
     url: 'https://numon.vercel.app',
   },
+
   colorMode: {
     classSuffix: '',
   },
+
   devtools: {
     enabled: false,
   },
+
   sitemap: {
     xsl: false,
   },
