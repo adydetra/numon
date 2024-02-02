@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@nuxt/image',
     '@nuxtjs/color-mode',
-    'nuxt-simple-sitemap',
+    '@nuxtjs/sitemap',
   ],
 
   site: {
