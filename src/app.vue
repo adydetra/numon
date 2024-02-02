@@ -21,6 +21,10 @@ useSeoMeta({
 const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
   server: false,
 });
+
+const ogImageOptions = {
+  component: 'OpenGraph',
+};
 </script>
 
 <template>
@@ -37,6 +41,7 @@ const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
     </div>
     <LazyAppFooter />
   </main>
+  <OgImage v-bind="ogImageOptions" />
 </template>
 
 <style lang="postcss">

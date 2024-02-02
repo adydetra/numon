@@ -25,6 +25,7 @@
     "eslint": "^8.56.0",
     "eslint-plugin-format": "^0.1.0",
     "nuxt": "^3.10.0",
+    "nuxt-og-image": "3.0.0-rc.37",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   }

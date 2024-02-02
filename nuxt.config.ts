@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
+    'nuxt-og-image',
   ],
 
   site: {
@@ -35,7 +36,7 @@ export default defineNuxtConfig({
   },
 
   devtools: {
-    enabled: false,
+    enabled: true,
   },
 
   sitemap: {

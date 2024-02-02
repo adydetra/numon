@@ -8,7 +8,7 @@
 
 - [x] GET Pokemon
 - [x] Responsive all device
-- [ ] OG Image
+- [x] OG Image
 - [x] Sitemap
 - [ ] Search
 - [x] Skeleton
