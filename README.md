@@ -17,7 +17,7 @@
 
 ## Contributing
 
-If you'd like to contribute to Numon by adding new features, fixing bugs please follow these steps:
+If you'd like to contribute to Numon by adding new features or fixing bugs please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b example-name`
