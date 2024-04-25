@@ -24,7 +24,7 @@
     "@unocss/nuxt": "^0.58.5",
     "eslint": "^8.56.0",
     "eslint-plugin-format": "^0.1.0",
-    "nuxt": "^3.10.2",
+    "nuxt": "^3.11.2",
     "nuxt-og-image": "3.0.0-rc.38",
     "vue": "^3.4.19",
     "vue-router": "^4.2.5"
