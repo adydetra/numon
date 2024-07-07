@@ -43,4 +43,6 @@ export default defineNuxtConfig({
   sitemap: {
     xsl: false,
   },
+
+  compatibilityDate: '2024-07-07',
 });
