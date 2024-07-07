@@ -22,7 +22,6 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@nuxt/image',
-    '@nuxthub/core',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
     'nuxt-og-image',
