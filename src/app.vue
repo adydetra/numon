@@ -54,7 +54,7 @@ const ogImageOptions = {
 }
 html,
 body {
-  @apply min-h-dvh scroll-smooth m-0 p-0;
+  @apply min-h-dvh scroll-smooth m-0 p-0 dark:bg-[#1c1b22];
 }
 ::-webkit-scrollbar {
   width: 8px;
