@@ -22,9 +22,7 @@ const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
   server: false,
 });
 
-const ogImageOptions = {
-  component: 'OpenGraph',
-};
+defineOgImageComponent('OpenGraph');
 </script>
 
 <template>
@@ -41,7 +39,6 @@ const ogImageOptions = {
     </div>
     <LazyAppFooter />
   </main>
-  <OgImage v-bind="ogImageOptions" />
 </template>
 
 <style lang="postcss">
