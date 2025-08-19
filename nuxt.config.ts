@@ -25,6 +25,12 @@ export default defineNuxtConfig({
     'nuxt-og-image',
   ],
 
+  routeRules: {
+    '/': {
+      prerender: true,
+    },
+  },
+
   site: {
     url: 'https://numon.vercel.app',
   },
