@@ -32,12 +32,12 @@ defineOgImageComponent('OpenGraph');
         v-model="searchTerm"
         type="text"
         placeholder="Search Pokemon..."
-        class="w-full border-0 rounded-md px-4 py-2 sm:w-auto dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        class="w-full border-0 rounded-md bg-gray-100 px-4 py-2 sm:w-auto dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
       <select
         v-model="sortBy"
-        class="w-full cursor-pointer appearance-none border-0 rounded-md bg-right bg-no-repeat px-4 py-2 pr-8 sm:w-auto dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-        style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=='); background-position: right 0.5rem center;"
+        class="w-full cursor-pointer appearance-none border-0 rounded-md bg-[right_0.5rem_center] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==')] bg-gray-100 bg-no-repeat px-4 py-2 pr-8 sm:w-auto dark:bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+')] dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        style="background-position: right 0.5rem center;"
       >
         <option value="name">
           Sort by Name
