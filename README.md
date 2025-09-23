@@ -10,10 +10,9 @@
 - [x] Responsive all device
 - [x] OG Image
 - [x] Sitemap
-- [ ] Search
-- [x] Skeleton
-- [ ] Sort: date, name
-- [ ] Refactor logic from Vue SFC to composables
+- [x] Search
+- [x] Sort: date, name
+- [x] Refactor logic from Vue SFC to composables
 
 ## Contributing
 
