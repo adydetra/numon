@@ -1,5 +1,5 @@
 <template>
-  <footer id="bottom" mx-auto mt-12 max-w-4xl flexcenter flex-wrap gap-6 px-3 text-xs text-gray-400 md:text-sm>
+  <footer id="bottom" mx-auto mt-2 max-w-4xl flexcenter flex-wrap gap-6 px-3 text-xs text-gray-400 md:text-sm>
     <div>
       <LazyAppColorMode />
     </div>

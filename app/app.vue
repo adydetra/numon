@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { usePokemons } from '~/composables/usePokemons';
+
 useHead({
   title: 'Numon',
   meta: [
@@ -18,19 +20,37 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 });
 
-const { pending, data: pokemons } = await useLazyFetch('/api/pokemons', {
-  server: false,
-});
+const { pending, pokemons, searchTerm, sortBy } = usePokemons();
 
 defineOgImageComponent('OpenGraph');
 </script>
 
 <template>
   <main mx-auto max-w-7xl place-content-center bg-white h-dvh class="dark:bg-[#1c1b22]">
-    <div v-if="pending" grid grid-cols-3 justify-center gap-12 px-4 py-12>
+    <div class="flexcenter flex-col gap-4 px-4 py-8 sm:flex-row">
+      <input
+        v-model="searchTerm"
+        type="text"
+        placeholder="Search Pokemon..."
+        class="w-full border-0 rounded-md px-4 py-2 sm:w-auto dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+      <select
+        v-model="sortBy"
+        class="w-full cursor-pointer appearance-none border-0 rounded-md bg-right bg-no-repeat px-4 py-2 pr-8 sm:w-auto dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+        style="background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg=='); background-position: right 0.5rem center;"
+      >
+        <option value="name">
+          Sort by Name
+        </option>
+        <option value="date">
+          Sort by Date (ID)
+        </option>
+      </select>
+    </div>
+    <div v-if="pending" grid grid-cols-3 justify-center gap-12 px-4 py-6>
       <SkeletonCard v-for="item in Array(9)" :key="`skeleton-${item}`" />
     </div>
-    <div v-else grid grid-cols-3 justify-center gap-12 px-4 py-12>
+    <div v-else grid grid-cols-3 justify-center gap-12 px-4 py-6>
       <LazyAppCard
         v-for="(pokemon, index) in pokemons"
         :key="`pokemon-${index}`"
