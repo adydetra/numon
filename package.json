@@ -13,20 +13,20 @@
   },
   "dependencies": {
     "@nuxt/image": "^2.0.0",
-    "nuxt": "^4.2.1",
-    "vue": "^3.5.24",
-    "vue-router": "^4.6.3"
+    "nuxt": "^4.4.6",
+    "vue": "^3.5.34",
+    "vue-router": "^5.0.7"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.2.0",
-    "@iconify-json/pixelarticons": "^1.2.2",
-    "@nuxt/devtools": "^3.1.0",
+    "@antfu/eslint-config": "^9.0.0",
+    "@iconify-json/pixelarticons": "^1.2.6",
+    "@nuxt/devtools": "^4.0.0-alpha.4",
     "@nuxtjs/color-mode": "^4.0.0",
-    "@nuxtjs/sitemap": "^7.4.7",
-    "@unocss/eslint-plugin": "^66.5.7",
-    "@unocss/nuxt": "^66.5.7",
-    "eslint": "^9.39.1",
-    "eslint-plugin-format": "^1.0.2",
-    "nuxt-og-image": "5.1.12"
+    "@nuxtjs/sitemap": "^8.0.15",
+    "@unocss/eslint-plugin": "^66.7.0",
+    "@unocss/nuxt": "^66.7.0",
+    "eslint": "^10.4.0",
+    "eslint-plugin-format": "^2.0.1",
+    "nuxt-og-image": "6.5.1"
   }
 }
