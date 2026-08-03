@@ -22,7 +22,7 @@ useSeoMeta({
 
 const { pending, pokemons, searchTerm, sortBy } = usePokemons();
 
-defineOgImageComponent('OpenGraph');
+defineOgImage('OpenGraph');
 </script>
 
 <template>
