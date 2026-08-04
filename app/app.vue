@@ -51,10 +51,11 @@ defineOgImage('OpenGraph');
       <SkeletonCard v-for="item in Array(9)" :key="`skeleton-${item}`" />
     </div>
     <div v-else grid grid-cols-3 justify-center gap-12 px-4 py-6>
-      <LazyAppCard
+      <AppCard
         v-for="(pokemon, index) in pokemons"
-        :key="`pokemon-${index}`"
+        :key="pokemon.id"
         :pokemon="pokemon"
+        :priority="index < 3"
       />
     </div>
     <LazyAppFooter />

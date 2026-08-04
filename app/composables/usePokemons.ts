@@ -1,6 +1,7 @@
 export function usePokemons() {
   const { pending, data: pokemons } = useLazyFetch('/api/pokemons', {
     server: false,
+    deep: false,
   });
 
   const searchTerm = ref('');
